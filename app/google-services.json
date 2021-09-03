@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991395973006",
+    "project_id": "widecare-b2c-bd431",
+    "storage_bucket": "widecare-b2c-bd431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991395973006:android:66cde79564d30e57d3c6df",
+        "android_client_info": {
+          "package_name": "com.iww.widecareB2C"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991395973006-8bkigqdeh5r1hjrok1uai7rhh8p8q1jn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iww.widecareB2C",
+            "certificate_hash": "9af770f026f108ccbc0bdb2a1903dc3192ce6a98"
+          }
+        },
+        {
+          "client_id": "991395973006-phg55e01pugbb0db7akug70hu1iccbff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWWpnx0LUk1ReagugWf_tjXX0u4-XuT50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991395973006-phg55e01pugbb0db7akug70hu1iccbff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

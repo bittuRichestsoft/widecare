@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="120dp"
+                android:id="@+id/image_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewGifflayout_home"
+        android:visibility="gone"
+        android:layout_below="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+        <Constant.PlayGifV
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:id="@+id/viewGiff_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         />
+    </LinearLayout>
+            <GridView
+                android:layout_below="@+id/relative"
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2" >
+            </GridView>
+
+    </RelativeLayout>

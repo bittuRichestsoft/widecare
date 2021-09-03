@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/textViewalign"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:padding="10dp"
+android:layout_alignParentRight="true"
+android:textColor="#3d406b"
+android:text="dfdfdf"
+    android:gravity="center"
+android:layout_gravity="center_horizontal"
+android:textSize="12dp"/>
+<!--android:maxLines="2"
+-->

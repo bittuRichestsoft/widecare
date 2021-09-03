@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:id="@+id/lin"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/itemcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="You have 0 Items In Your Cart"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViews"
+        android:layout_below="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160dp"></ListView>
+    <LinearLayout
+        android:id="@+id/carttotal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/grey"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+       android:background="@drawable/box"
+          android:weightSum="10"
+          android:padding="3dp"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:background="@color/grey"
+              android:layout_weight="5"
+              android:paddingLeft="20dp"
+              android:gravity="center|left"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:text="Enter Promo"
+              android:textColor="#000000" />
+          <EditText
+              android:id="@+id/et_promoCode"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="3"
+              android:gravity="center_vertical"
+              android:textSize="18sp"
+android:singleLine="true"
+              android:background="@color/white"
+              android:hint="promo code"
+              android:textColor="#000000" />
+          <TextView
+              android:id="@+id/tv_promoCode"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="2"
+              android:gravity="center|left"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:drawableRight="@drawable/arrow_side"
+              android:background="@color/orange"
+              android:text=" GO "
+              android:textColor="#000000" />
+
+      </LinearLayout>
+       <!-- -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Cart Totals"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Subtotal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Rs. 0"
+                android:id="@+id/subtotal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:text="Total"
+                android:textColor="@color/black" ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Rs. 0"
+                android:id="@+id/total" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:background="@color/orange"
+            android:text="PROCEED TO PAYMENTS " />
+    </LinearLayout>
+
+</RelativeLayout>

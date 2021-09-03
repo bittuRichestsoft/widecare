@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lift"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order No #123"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/ordernum" />
+        <TextView
+            android:textColor="@color/black"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="September 27,2016"
+
+            android:id="@+id/orderdate" />
+        <TextView
+            android:id="@+id/status"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="2dp"
+            android:textSize="15dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="status"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="Rs. 199.99"
+            android:id="@+id/orderprice" />
+        <TextView
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textStyle="italic"
+            android:text="for 3 items"
+            android:id="@+id/orderquant" />
+        <TextView
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/viewbtn"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="View"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/filled_inner"
+       />
+    </LinearLayout>
+
+</LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"></View>
+</LinearLayout>

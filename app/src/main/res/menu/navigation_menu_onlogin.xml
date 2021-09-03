@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/profile_icon"
+                android:title="My Profile" />
+            <item
+android:visible="false"
+                android:id="@+id/claims"
+                android:icon="@drawable/claimm_icon"
+                android:title="My Claims" />
+        <item
+            android:id="@+id/order"
+            android:icon="@drawable/order_icon"
+            android:title="Order History" />
+            <item
+                android:id="@+id/refers"
+                android:icon="@drawable/refer_icon"
+                android:title="Refer and Earn" />
+        </group>
+
+
+    <group android:id="@+id/grp5" android:checkableBehavior="single">
+            <item
+                android:id="@+id/aboutt"
+                android:icon="@drawable/about_icon"
+          android:visible="false"      android:title="About Us" />
+            <item
+                android:id="@+id/supportt"
+                android:icon="@drawable/support_icon"
+                android:title="Support/ FAQ" />
+        <item
+            android:id="@+id/whyUs"
+            android:icon="@drawable/question"
+            android:title="Why Us" />
+
+        <item
+            android:id="@+id/howToClaim"
+            android:icon="@drawable/claim"
+            android:title="How To Claim" />      <item
+                android:id="@+id/contactt"
+                android:icon="@drawable/contact_icon"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/ratee"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate Us" />
+   </group>
+
+</menu>

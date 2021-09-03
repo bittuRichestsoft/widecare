@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TraknpayResponseActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    android:layout_below="@+id/toolbars"
+    android:orientation="vertical">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+          android:gravity="center|top"
+        android:id="@+id/responseMessageView"
+        android:text="Transaction Status" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center|top"
+        android:id="@+id/res"
+        android:text="Thanks You!!" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Transaction ID"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:id="@+id/transactionIdView"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:id="@+id/download_link"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/recx"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:padding="7dp"
+            android:layout_weight="3.3"
+            android:tint="@color/white"
+            android:src="@drawable/download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:layout_weight=".7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/download"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:text="DOWNLOAD POLICY"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_new"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:onClick="onBackButtonClicked"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Create\nNew Order"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/orange"
+            android:onClick="onBackButtonClicked"
+            android:textSize="18dp"
+            android:text="View All\nPoilicy"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

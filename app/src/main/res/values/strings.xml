@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_names">WideCare</string>
+    <string name="app_name">WideCare</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_title">Search</string>
+    <string name="title_activity_navigation">WildCare</string>
+    <string name="Text11">Zero Depriciation </string>
+    <string name="Text22">Depreciation</string>
+    <string name="Text33">Crack Cover Policy</string>
+    <string name="Text44">Capped Cover</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="rectext">Protection plan with comprehensive coverage without any depreciation deductible and cashless setllement \n\n Zero Depriciation ensure comrehensive coverage for your device now get cash settlement without any deduction for depriciation on the value on the device parts</string>
+    <string name="Text1">Protection plan with comprehensive \n coverage without any depreciation \n deductible and cash- less setllement</string>
+    <string name="Text2">Protection plan with depreciation  \n slab as perwear and tear of device</string>
+    <string name="Text3">Protection plan for crack \n screen only on your device at nominal cost</string>
+    <string name="Text4">Protection plan for used phone \n based on prevailing market value</string>
+    <string name="Text">Protection plan with comprehensive coverage without any depreciation  deductible and cash- less setllement</string>
+    <string name="facebookId">1988557587879113</string>
+    <string name="fb_login_protocol_scheme">fb1988557587879113</string>
+  <!--  <string name="gcm_defaultSenderId" translatable="false">991395973006</string>
+-->
+    <string name="default_notification_channel_id">www.widecare.com</string>
+ <!--    <string name="notification_channel_id">com.privexec</string>
+-->
+    <string name="address">Navjot singh \n#4739 MIG ind.sc.70 \nMOhali 160071 \npunjab. </string>
+    <string name="title_activity_payment_screen"></string>
+    <string name="Rs">\u20B9</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_combo">ComboActivity</string>
+    <string name="submit_text">\nYou will be informed on any pending documents required for smooth processing of the claim.\nYou can visit the website or app to view the claim progress."
+   </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

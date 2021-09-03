@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/l11"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/widecare_splash_logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/cell"
+        android:hint="Phone / Email"
+        android:singleLine="true"
+        android:background="@color/grey"
+        android:textColor="#000000"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/email_login" />
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@color/grey"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/pass_login" />
+
+            <TextView
+                android:id="@+id/reg"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+           android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Login Using Facebook OR Gmail"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l33"
+        android:layout_below="@+id/r44"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/regBtn"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="New Registration"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@color/dark_grey"/>
+        <TextView
+            android:id="@+id/forgetBtn"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:text="Forget Password"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@color/orange"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/r44"
+     android:visibility="gone"   android:layout_marginTop="20dp"
+        android:layout_below="@+id/l11"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_fb"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:fb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fbLoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/facebook_icon"
+                android:weightSum="100">
+
+
+
+            </ImageView>
+        </FrameLayout>
+
+
+       <ImageView
+            android:id="@+id/gmailBtn"
+            android:layout_marginRight="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gplus_icon"/>
+    <LinearLayout
+        android:id="@+id/ll_gmail"
+        android:layout_marginRight="100dp"
+        android:visibility="gone" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:src="@drawable/gplus_icon"
+         >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/signOutGooglePlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_revoke_access_google"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Revoke Access"
+                android:visibility="gone" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_plus_integration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google+"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgvw_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/gplus_icon" />
+
+            <TextView
+                android:id="@+id/tv_gmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:gravity="right|center_vertical"
+                android:padding="2dp"
+                android:text="Login with"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:padding="8dp"
+                android:src="@drawable/gplus_icon" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_Btn"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="LOGIN"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

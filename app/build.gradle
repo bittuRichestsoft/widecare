@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 28
+  //  buildToolsVersion '28.0.3'
+    //compileSdkVersion 30
+
+    defaultConfig {
+      /*        applicationId "com.widecare.indiaweb.myapplication"
+*/
+        applicationId 'com.iww.widecareB2C'
+        minSdkVersion 19
+      //   targetSdkVersion 30  // was commented already
+        versionCode 3
+        versionName "1.0.2"
+     /*   testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+  */
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    aaptOptions
+            {
+                cruncherEnabled = false
+            }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+}
+allprojects {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+    maven {
+        url 'https://jitpack.io'
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+ //   implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "commons-io:commons-io:+"
+    implementation 'org.apache.httpcomponents:httpmime:4.2.3'
+  //  implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.android.support:design:28.0.0'
+
+ //   implementation 'com.google.android.gms:play-services:11.8.0'
+    implementation 'com.roughike:bottom-bar:2.0.2'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.29.0'
+     implementation 'com.google.android.gms:play-services-auth:8.4.0'
+   implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+  /*    implementation 'com.google.android.gms:play-services:10.2.1'
+     implementation 'com.google.android.gms:play-services-gcm:10.2.1'
+*/
+    implementation 'com.google.firebase:firebase-messaging:20.1.2'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+ 
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

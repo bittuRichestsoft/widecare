@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/ll_tab22"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/call_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/icon_phone"
+            android:text="  Toll Free Number: 1234567890"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/email_icon"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/orange"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_email"
+            android:text="  Email Support: support@widecare.in"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/msg_icon"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/icon_message"
+            android:text="  SMS Support: 7171"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/ll_tab22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/initmateonline"
+            android:background="@color/blue"
+            android:textColor="@color/yellow"
+            android:text="INTIMATE CLAIM ONLINE NOW !!"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

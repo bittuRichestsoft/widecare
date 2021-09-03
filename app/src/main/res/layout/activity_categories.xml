@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="4">
+            <ImageView
+                android:id="@+id/imgicon"
+                android:padding="4dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        <!--
+         android:src="@drawable/service_icon1"
+android:tint="@color/orange"-->    <TextView
+                android:textStyle="bold"
+                android:id="@+id/catname"
+                android:textAllCaps="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="DEVICE ACCIDENTAL PROTECTION"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange"></View>
+        <Constant.PlayGifV
+            android:id="@+id/viewGif"
+            android:layout_marginTop="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical" />
+
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="5">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icon11m"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/home_icon" />
+            <TextView
+                android:id="@+id/icon11"
+                android:textColor="@color/orange"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icon33m"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/policy_icon" />
+            <TextView
+                android:id="@+id/icon33"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Policies"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icon44m"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/offer_icon" />
+            <TextView
+                android:id="@+id/icon44"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Claims"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icon22m"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/categories_icon" />
+            <TextView
+                android:id="@+id/icon22"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:text="Offers"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icon55m"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/cart_icon" />
+            <TextView
+                android:id="@+id/icon55"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Cart"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

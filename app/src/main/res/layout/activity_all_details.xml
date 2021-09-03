@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/bgg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/xx"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/x"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="6"
+                android:padding="2dp"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:id="@+id/imagedetailpolicy" />
+        <LinearLayout
+            android:id="@+id/vvvv"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/vvv"
+                android:orientation="horizontal"
+                android:layout_weight="2.5"
+                android:layout_marginTop="2dp"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mynamees"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.5"
+                    android:textSize="20dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:text="Zero Depreciation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#cbcbcb"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"></View>
+            <LinearLayout
+                android:id="@+id/vvz"
+                android:orientation="horizontal"
+                android:layout_weight="2.5"
+                android:layout_marginTop="2dp"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/myprices"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:textSize="16dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:text="₹ 100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="2.5"
+                android:layout_marginTop="1dp"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/mynameee"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:textSize="18dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:text="Policy Number:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blue"></View>
+        <LinearLayout
+            android:id="@+id/ll_tab11"
+            android:layout_weight="3"
+            android:layout_marginBottom="1dp"
+            android:background="@color/orange"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/intimate_linear"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/inti" />
+            <TextView
+                android:id="@+id/intimate"
+                android:focusable="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.5"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:text="Intimate Claim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/download_linear"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="1.5"
+                    android:tint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/download" />
+                <TextView
+                    android:id="@+id/download"
+                    android:focusable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.5"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:text="Download Policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mm"
+            android:layout_below="@+id/xx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue"></View>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_tab22"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toll"
+                        android:drawableLeft="@drawable/toll"
+                        android:text="   Toll Free Number: 1234567890"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:text="   Email: support@widecare.in"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sms"
+                        android:drawableLeft="@drawable/sms"
+                        android:text="   SMS Support: 7171"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/blue"
+                android:id="@+id/pol1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:paddingRight="10dp"
+                android:id="@+id/pol11"
+                android:drawableRight="@drawable/arrow_down"
+                 android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="Policy Details "
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"></View>
+            <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:id="@+id/pd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/bkk"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#535353"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Policy Number "
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+                <TextView
+                android:background="@drawable/bkk"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#535353"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mypolicyp" />
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_grey"></View>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:background="@drawable/bkk"
+                        android:padding="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#535353"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Policy Purchase Date "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <TextView
+                        android:background="@drawable/bkk"
+                        android:padding="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#535353"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mypolicypurdate" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_grey"></View>
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/bkk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Order Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myorderpolicy" />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_grey"></View>
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Start Date "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sdates" />
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_grey"></View>
+
+                <LinearLayout
+                android:background="@drawable/bkk"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="End Date "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edates" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/blue"
+            android:id="@+id/pol2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textColor="@color/orange"
+                android:paddingRight="10dp"
+                android:id="@+id/pol22"
+                android:drawableRight="@drawable/arrow_side"
+                android:textStyle="bold"
+                android:text="Customer Details "
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange"></View>
+        <LinearLayout
+            android:id="@+id/cd"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="abc "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poname" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"></View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Phone "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="7676787889 "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pophone" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"></View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/bkk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="abc@g.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poemail" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"></View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Dob "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="11-09-91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/podob" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"></View>
+
+            <LinearLayout
+                android:background="@drawable/bkk"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#535353"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="chandigarh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poadd" />
+            </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/blue"
+                android:id="@+id/pol3"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:paddingRight="10dp"
+                android:id="@+id/pol33"
+                android:drawableRight="@drawable/arrow_side"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="Device/Plan Details "
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"></View>
+            <LinearLayout
+                android:id="@+id/dd"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a33"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TYPE" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a1"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="samsung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Brand" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Model"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="J2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Model" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:id="@+id/textimei"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Imei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="90475947"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/IMEI" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a44"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textserial"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Serial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Serial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/SERIAL" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a4"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="PurchaseDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="1-1-2017"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/PurchaseDate" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a5"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="PurchasePrice(in Rs)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/PurchasePrice"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a10"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/COLOR"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a6"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/Age"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a7"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/Sex"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a8"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/DOB"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/a9"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="pan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/PAN"
+                            android:background="@drawable/bkkk"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#535353"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_grey"></View>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1sp"
+                android:layout_height="match_parent"></View>
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkk"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:text="Policy Details "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="#535353"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text="Policy Number: rgrgr "
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"></View>
+                <LinearLayout
+
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="#535353"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text="Started Date: 10-11-2016"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:background="@color/dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"></View>
+                <LinearLayout
+
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="#535353"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text="Ended Date: 9-11-2017"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pol4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:textSize="18dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/pol44"
+                    android:drawableRight="@drawable/arrow_side"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:paddingLeft="22dp"
+                    android:text="Terms And Conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/terms"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text=""
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Constant.PlayGifV
+                    android:id="@+id/viewterms"
+                    android:visibility="gone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange"></View>
+            <LinearLayout
+                android:id="@+id/pol5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:background="@color/blue"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/pol55"
+                    android:drawableRight="@drawable/arrow_side"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="22dp"
+                    android:text="Policy Exclusion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/exclusive"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text=" "
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Constant.PlayGifV
+                    android:id="@+id/viewexc"
+                    android:visibility="gone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/mm"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:paddingLeft="2dp"
+            android:orientation="vertical"
+            android:textColor="#535353">
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F48221"
+            android:text="Customer Details"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#535353"
+                    android:text="Name: "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:text="abc"
+                    android:id="@+id/myname" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#535353"
+                android:text="Email: "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:text="abc@gmail.com"
+                android:id="@+id/mymail" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#535353"
+                    android:text="Telephone: "/>
+
+
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myphone"
+                    android:text="7666786790"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#535353"
+                android:text="Billing Address: "/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/mybillingadr"
+                android:text="234, phase 11 \nMohali \n122001"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

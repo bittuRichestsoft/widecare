@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/signin_up"
+            android:icon="@drawable/login_in"
+            android:title="SignIn/SignUp" />
+        <item
+            android:id="@+id/noti"
+            android:icon="@drawable/notification_icon"
+            android:title="Notification" />
+
+    </group>
+
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/about_icon"
+             android:visible="false"
+                android:title="About Us" />
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/support_icon"
+                android:title="Support/ FAQ" />
+
+        <item
+            android:id="@+id/whyUs"
+            android:icon="@drawable/question"
+            android:title="Why Us" />
+
+        <item
+            android:id="@+id/howToClaim"
+            android:icon="@drawable/claim"
+            android:title="How To Claim" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contact_icon"
+            android:title="Contact Us" />
+
+
+        <!--<LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/icon6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:src="@drawable/cart_icon" />
+                <TextView
+                    android:id="@+id/icon6title"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Why Us"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/icon7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:src="@drawable/cart_icon" />
+                <TextView
+                    android:id="@+id/icon7title"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How It Works"/>
+            </LinearLayout>-->
+
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate Us" />
+      </group>
+
+</menu>

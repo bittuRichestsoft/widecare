@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/umb"
+            android:id="@+id/imagedetails" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Zero Depriciation"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/imagedetails"
+            android:layout_toEndOf="@+id/imagedetails"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:id="@+id/itemname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Rs199.99"
+            android:textColor="#F48221"
+            android:textSize="17sp"
+            android:id="@+id/itemprice"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Quantity : 1"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/imagedetails"
+            android:layout_toEndOf="@+id/imagedetails"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:id="@+id/itemquantity" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark_grey"></View>
+    <LinearLayout
+        android:background="@color/grey"
+        android:weightSum="3"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/itemNames"
+                android:textSize="15dp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:text="Zero Depressation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/itemviews"
+                android:text="VIEW"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/orange"
+                android:background="@color/blue"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:text="Policy No:  "
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/itempolicys"
+                android:text=" 44345 "
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:text="Date of Order:"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/itemdates"
+                android:text="12-10-91"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

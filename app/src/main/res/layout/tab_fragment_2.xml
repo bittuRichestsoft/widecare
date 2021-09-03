@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/tt10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/t7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="16dp"
+            android:text="Document 1:"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:hint="   Selected File.."
+            android:gravity="center_vertical"
+            android:id="@+id/initmatedoc1"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/uplod"
+            android:background="@drawable/bkg1"
+            android:layout_marginRight="16dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/t8"
+        android:layout_below="@+id/t7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="16dp"
+            android:text="Document 2:"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/initmatedoc2"
+            android:gravity="center_vertical"
+            android:background="@drawable/bkg1"
+            android:hint="   Selected File.."
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@drawable/uplod"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/t9"
+        android:layout_below="@+id/t8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="16dp"
+            android:text="Document 3:"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bkg1"
+            android:drawableLeft="@drawable/uplod"
+            android:layout_marginRight="16dp"
+            android:id="@+id/initmatedoc3"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:hint="   Selected File.."
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t10"
+        android:layout_below="@+id/t9">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/initmatecheck"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:text="I agree to the Terms and Conditions (T and C) "
+            android:layout_above="@+id/relativeLayout"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:id="@+id/bottoms"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/initmateSubmit"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="SUBMIT"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:id="@+id/initmateReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/yellow"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="RESET"
+                    android:id="@+id/price" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
